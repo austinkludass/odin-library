@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <button class="add-new">ADD BOOK</button>
+    <div class="book-container"></div>
+    <dialog id="new-book-dialog">
+        <form id="form">
+            <div>Add new book</div>
+            <div class="dialog-container">
+                <label for="book_title">Title</label>
+                <input id="book_title" type="text" required placeholder="Book title..." />
+                <label for="book_author">Author</label>
+                <input id="book_author" type="text" required placeholder="Author..." />
+                <label for="book_pages">Pages</label>
+                <input id="book_pages" type="number" required min="0" />
+                <label for="book_read">Read</label>
+                <input id="book_read" type="checkbox" /> 
+                <button id="submit" type="submit">ADD</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+</html>
